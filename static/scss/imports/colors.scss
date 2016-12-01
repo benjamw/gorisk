@@ -1,0 +1,88 @@
+// Color names as they appear in the style guide:
+$ash: #EAEAEA;
+$graphite: #C9C8C7;
+$charcoal: #757575;
+$carbon: #222A30;
+$ruby: #F03525;
+$paleoRed: #FC5929;
+$amber: #F7932F;
+$sulfur: #F9C52D;
+$dazGreen: #25CE9E;
+$aquamarine: #24CFC5;
+$morphBlue: #1DADCB;
+$cobalt: #189FB2;
+
+// Primary colors:
+$white: #fff;
+$black: $carbon;
+$blue: $morphBlue;
+$yellow: $sulfur;
+$red: $ruby;
+$orange: $amber;
+
+// Primary color gradients:
+$black10: lighten( $black, 90% );
+$black20: lighten( $black, 80% );
+$black30: lighten( $black, 70% );
+$black40: lighten( $black, 60% );
+$black50: lighten( $black, 50% );
+$black60: lighten( $black, 40% );
+$black70: lighten( $black, 30% );
+$black80: lighten( $black, 20% );
+$black90: lighten( $black, 10% );
+$black100: $black;
+$black110: darken( $black, 10% );
+$black120: darken( $black, 20% );
+
+$blue40: lighten( $blue, 60% );
+$blue50: lighten( $blue, 50% );
+$blue60: lighten( $blue, 40% );
+$blue70: lighten( $blue, 30% );
+$blue80: lighten( $blue, 20% );
+$blue90: lighten( $blue, 10% );
+$blue100: $blue;
+$blue105: darken( $blue, 5% );
+$blue110: darken( $blue, 10% );
+$blue120: darken( $blue, 20% );
+$blue130: darken( $blue, 30% );
+$blue140: darken( $blue, 40% );
+$blue150: darken( $blue, 50% );
+
+$yellow50: lighten( $yellow, 50% );
+$yellow60: lighten( $yellow, 40% );
+$yellow70: lighten( $yellow, 30% );
+$yellow80: lighten( $yellow, 20% );
+$yellow90: lighten( $yellow, 10% );
+$yellow100: $yellow;
+$yellow110: darken( $yellow, 10% );
+$yellow120: darken( $yellow, 20% );
+$yellow130: darken( $yellow, 30% );
+$yellow140: darken( $yellow, 40% );
+$yellow150: darken( $yellow, 50% );
+$yellow160: darken( $yellow, 60% );
+
+$red50: lighten( $red, 50% );
+$red60: lighten( $red, 40% );
+$red70: lighten( $red, 30% );
+$red80: lighten( $red, 20% );
+$red90: lighten( $red, 10% );
+$red100: $red;
+$red110: darken( $red, 10% );
+$red120: darken( $red, 20% );
+$red130: darken( $red, 30% );
+$red140: darken( $red, 40% );
+$red150: darken( $red, 50% );
+$red160: darken( $red, 60% );
+
+$orange50: lighten( $orange, 50% );
+$orange60: lighten( $orange, 40% );
+$orange70: lighten( $orange, 30% );
+$orange80: lighten( $orange, 20% );
+$orange90: lighten( $orange, 10% );
+$orange100: $orange;
+$orange110: darken( $orange, 10% );
+$orange120: darken( $orange, 20% );
+$orange130: darken( $orange, 30% );
+$orange140: darken( $orange, 40% );
+$orange150: darken( $orange, 50% );
+$orange160: darken( $orange, 60% );

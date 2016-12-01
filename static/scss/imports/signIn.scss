@@ -1,0 +1,52 @@
+
+#sign-in {
+    margin-top: 55px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 80px;
+    }
+
+    .panel-default {
+        border: none;
+        border-color: transparent;
+    }
+
+    .panel {
+        background-color: $black;
+        padding-top: 85px;
+        padding-bottom: 30px;
+
+        #logo-container {
+            display: inline-block;
+            position: absolute;
+            top: -90px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: $black60;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: solid 10px $white;
+
+            h1 {
+                color: $white;
+                font-weight: 100;
+                letter-spacing: 5px;
+                text-align: center;
+                line-height: 95px;
+                margin-left: 2px;
+            }
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        button#sign-in-button {
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+    }
+}

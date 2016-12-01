@@ -1,0 +1,33 @@
+body {
+    color: $carbon;
+    font-family: 'Gotham', 'Helvetica', 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 150%;
+    small {
+        font-size: 10px;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        small {
+            font-size: 65%;
+        }
+    }
+
+    h1 { font-size: 36px; }
+    h2 { font-size: 27px; }
+    h3 { font-size: 24px; }
+    h4 { font-size: 21px; }
+    h5 { font-size: 18px; }
+    h6 { font-size: 15px; }
+    .hero1 { font-size: 90px; }
+    .hero2 { font-size: 72px; }
+    .hero3 { font-size: 54px; }
+
+    a {
+        color: $blue;
+        text-decoration: none !important;
+
+        &:hover, &:active {
+            color: $blue110;
+        }
+    }
+}

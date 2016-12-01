@@ -1,0 +1,146 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+body {
+  color: #222A30;
+  font-family: 'Gotham', 'Helvetica', 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 150%;
+}
+body small {
+  font-size: 10px;
+}
+body h1 small, body h2 small, body h3 small, body h4 small, body h5 small, body h6 small {
+  font-size: 65%;
+}
+body h1 {
+  font-size: 36px;
+}
+body h2 {
+  font-size: 27px;
+}
+body h3 {
+  font-size: 24px;
+}
+body h4 {
+  font-size: 21px;
+}
+body h5 {
+  font-size: 18px;
+}
+body h6 {
+  font-size: 15px;
+}
+body .hero1 {
+  font-size: 90px;
+}
+body .hero2 {
+  font-size: 72px;
+}
+body .hero3 {
+  font-size: 54px;
+}
+body a {
+  color: #1DADCB;
+  text-decoration: none !important;
+}
+body a:hover, body a:active {
+  color: #17879e;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body header {
+  margin-top: 55px;
+  flex: 0 0 auto;
+}
+body header .navbar {
+  text-transform: uppercase;
+}
+body header .navbar .navbar-nav {
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+body header .navbar .navbar-brand {
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+body .input-group .input-group-addon {
+  color: #37444e;
+  background-color: #f3f5f7;
+  border-color: #d5dce2;
+}
+body .btn.btn-blue {
+  color: #fff;
+  background-color: #1DADCB;
+  border: none;
+}
+body .btn.btn-blue:hover {
+  background-color: #1a9ab5;
+}
+body .btn.btn-blue:active {
+  background-color: #17879e;
+}
+body #handlebars-content {
+  flex: 1 0 auto;
+}
+body footer {
+  flex: 0 0 auto;
+}
+
+#sign-in {
+  margin-top: 55px;
+}
+@media screen and (min-width: 768px) {
+  #sign-in {
+    margin-top: 80px;
+  }
+}
+#sign-in .panel-default {
+  border: none;
+  border-color: transparent;
+}
+#sign-in .panel {
+  background-color: #222A30;
+  padding-top: 85px;
+  padding-bottom: 30px;
+}
+#sign-in .panel #logo-container {
+  display: inline-block;
+  position: absolute;
+  top: -90px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #7c92a2;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: solid 10px #fff;
+}
+#sign-in .panel #logo-container h1 {
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 5px;
+  text-align: center;
+  line-height: 95px;
+  margin-left: 2px;
+}
+#sign-in .panel .input-group {
+  margin-bottom: 20px;
+}
+#sign-in .panel button#sign-in-button {
+  margin-top: 10px;
+  text-transform: uppercase;
+}
