@@ -1,7 +1,7 @@
 {
   "name": "gorisk",
   "version": "0.8.0",
-  "description": "A port of the board game Risk built in Go and using websockets",
+  "description": "A clone of the board game Risk built in Go that makes use of websockets",
   "main": "main.js",
   "config": {
     "unsafe-perm": true
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/benjamw/gorisk.git"
   },
-  "author": "",
+  "author": "Benjam Welker, Rob Aagaard, Joseph Mecham",
   "license": "ISC",
   "devDependencies": {
     "grunt": "^1.0.1",
