@@ -1,5 +1,1 @@
-
-$(document).ready(function() {
-    page.parseHash();
-    $(window).on('hashchange', page.parseHash);
-});
+// script initialization goes here
