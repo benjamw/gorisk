@@ -5,29 +5,10 @@ module.exports = function (grunt) {
 
 	grunt.initConfig({
 
-		handlebars: {
-			templates: {
-				files: {
-					"static/js/compiledHandlebars/compiledHandlebarsTemplates.js": "static/handlebars/templates/**/*.hbs"
-				}
-			},
-			partials: {
-				files: {
-					"static/js/compiledHandlebars/compiledHandlebarsPartials.js": "static/handlebars/partials/**/*.hbs"
-				}
-			}
-		},
-
 		concat: {
 			javascript: {
 				files: {
 					"static/js/combined.js": [
-						"static/js/vendor/jquery1.12.4.min.js", // jQuery first
-						"static/js/vendor/handlebars.runtime-v4.0.5.js", // then Handlebars
-
-						"static/js/compiledHandlebars/compiledHandlebarsPartials.js",
-						"static/js/compiledHandlebars/compiledHandlebarsTemplates.js",
-
 						// grab everything else
 						"static/js/**/*.js",
 
@@ -58,25 +39,10 @@ module.exports = function (grunt) {
 				files: {
 					"static/css/main.css": "static/scss/main.scss"
 				}
-				// files: [{
-				//     expand: true,
-				//     cwd: "static/scss/",
-				//     src: ["*.scss"],
-				//     dest: "static/css/",
-				//     ext: ".css",
-				// }]
 			}
 		},
 
 		watch: {
-			handlebarsTemplates: {
-				files: ["static/handlebars/templates/**/*.hbs"],
-				tasks: ["handlebars:templates"]
-			},
-			handlebarsPartials: {
-				files: ["static/handlebars/partials/**/*.hbs"],
-				tasks: ["handlebars:partials"]
-			},
 			javascript: {
 				files: ["static/js/**/*.js", "!static/js/combined.js"],
 				tasks: ["concat:javascript"]
@@ -98,7 +64,6 @@ module.exports = function (grunt) {
 	});
 
 	// Load Task Plugins
-	grunt.loadNpmTasks("grunt-contrib-handlebars");
 	grunt.loadNpmTasks("grunt-contrib-concat");
 	grunt.loadNpmTasks("grunt-contrib-sass");
 	grunt.loadNpmTasks("grunt-contrib-watch");
@@ -107,7 +72,7 @@ module.exports = function (grunt) {
 	grunt.registerTask("group", "Rebuild css/js groupings", vdotRegroup);
 
 	// Default Tasks
-	grunt.registerTask("default", ["handlebars", "concat", "sass", "group"]);
+	grunt.registerTask("default", ["concat", "sass", "group"]);
 
 
 	function vdotRegroup() {
@@ -146,7 +111,7 @@ module.exports = function (grunt) {
 
 						tmpOut = fs.readFileSync(fileName, "utf8");
 						if (minifyGroups) {
-							if (type == "css") {
+							if (type === "css") {
 								tmpOut = cssmin(tmpOut);
 							} else {
 								tmpOut = jsmin(tmpOut);

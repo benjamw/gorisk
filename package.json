@@ -9,10 +9,6 @@
   "directories": {
     "test": "test"
   },
-  "scripts": {
-    "preinstall": "sudo npm i -g grunt-cli & sudo gem install sass",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/benjamw/gorisk.git"
@@ -22,7 +18,6 @@
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-handlebars": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "shelljs": "~0.7.5",

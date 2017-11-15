@@ -1,7 +1,5 @@
 {
   "js": {
-    "js/vendor/jquery1.12.4.min.js": "scripts",
-    "js/vendor/handlebars.runtime-v4.0.5.js": "scripts",
     "js/combined.js": "scripts"
   },
   "css": {
