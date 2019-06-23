@@ -20,7 +20,7 @@
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "shelljs": "~0.7.5",
+    "shelljs": "~0.8.3",
     "jsmin": "~1.0.1",
     "cssmin": "~0.4.3",
     "blueimp-md5": "~2.5.0",
